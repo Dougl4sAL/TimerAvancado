@@ -1,0 +1,102 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.03em;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.container {
+    height: 350px;
+    width: 550px;
+    text-align: center;
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.painel {
+    background-color: red;
+    height: 170px;
+    width: 100%;
+    padding: 25px 0;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+#minutos {
+    font-size: 3.7em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+/* Muda a cor do cronometro quando chega a zero */
+/* O .timer-up foi ativado usando JS */
+#minutos.timer-up {
+    color: #72e922;
+}
+
+.btn_start_reset {
+    margin-top: 30px;
+}
+
+
+.btn-start,
+.btn-reset {
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 0 20px;
+    padding: 9px;
+    width: 130px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    /*Por causa do icone dos botoes*/
+}
+
+.btn-start img,
+.btn-reset img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.alterar {
+    background-color: whitesmoke;
+    border-radius: 0 0 3px 3px;
+}
+
+.mais-tempo,
+.menos-tempo,
+.mais-descan,
+.menos-descan {
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn-descan>div,
+.btn-tempo>div {
+    display: inline-block;
+}
+
+.mudar-tempo,
+.mudar-descan {
+    display: inline-block;
+    margin: 0 40px;
+}

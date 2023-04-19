@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Pomodoro Timer</h1>
+
+        <div class="container">
+
+            <div class="painel">
+
+                <div class="informacoes">
+                    <div class="secao">Seção</div>
+
+                    <div class="timer">
+                        <div id="minutos">25:00</div>
+                    </div>
+                </div>
+
+                <div class="btn_start_reset">
+                    <button class="btn-start">
+                        <img src="imagens/play_btn.png" alt="play">
+                    Start</button>
+
+                    <button class="btn-reset">
+                        <img src="imagens/reset_btn.png" alt="reset"> 
+                    Reset</button>
+                </div>
+
+            </div>
+
+            <div class="alterar">
+
+                <div class="mudar-tempo">
+                    <div>
+                        <p>Mudar tempo</p>
+                    </div>
+
+                    <div class="btn-tempo">
+                        <button class="mais-tempo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#FFFFFF">
+                                <path d="M12 3l8 8h-6v10h-4v-10h-6l8-8z"/>
+                              </svg>
+                        </button>
+
+                        <div class="tempo">
+                            <span class="tempo-min">25 min</span>
+                        </div>
+
+                        <button class="menos-tempo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#FFFFFF">
+                                <path d="M12 21l-8-8h6v-10h4v10h6l-8 8z"/>
+                              </svg>                              
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mudar-descan">
+                    <div>
+                        <p>Descanço</p>
+                    </div>
+
+                    <div class="btn-descan">
+                        <button class="mais-descan">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14"
+                                fill="#FFFFFF">
+                                <path d="M12 3l8 8h-6v10h-4v-10h-6l8-8z" />
+                            </svg> 
+                        </button>
+
+                        <div class="descan">
+                            <span class="descan-min">05 min</span>
+                        </div>
+
+                        <button class="menos-descan">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#FFFFFF">
+                                <path d="M12 21l-8-8h6v-10h4v10h6l-8 8z"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <p>&copy; Douglas A.S</p>
+                </footer>
+            </div>
+
+        </div> <!--Container fim-->
+    </section>
+
+    <audio src="midia/som_iphone.mp3" class="audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
